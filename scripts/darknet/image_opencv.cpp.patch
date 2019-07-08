@@ -1,0 +1,12 @@
+--- thirdparty/darknet/src/image_opencv.cpp	2019-06-12 23:19:53.725933162 +0900
++++ scripts/darknet/image_opencv.cpp	2019-06-12 23:17:41.737387392 +0900
+@@ -574,7 +574,8 @@
+ {
+     cv::VideoCapture* cap = NULL;
+     try {
+-        cap = new cv::VideoCapture(index);
++        cap = new cv::VideoCapture(/*index*/"nvarguscamerasrc ! video/x-raw(memory:NVMM), width=(int)640, height=(int)360,format=(string)NV12, framerate=(fraction)30/1 ! nvvidconv ! video/x-raw, format=(string)BGRx ! videoconvert ! video/x-raw, format=(string)BGR ! appsink");
++        //cap = new cv::VideoCapture("nvarguscamerasrc ! video/x-raw(memory:NVMM), width=(int)1920, height=(int)1080,format=(string)NV12, framerate=(fraction)30/1 ! nvvidconv ! video/x-raw, format=(string)BGRx ! videoconvert ! video/x-raw, format=(string)BGR ! appsink");
+         //cap->set(CV_CAP_PROP_FRAME_WIDTH, 1280);
+         //cap->set(CV_CAP_PROP_FRAME_HEIGHT, 960);
+     }

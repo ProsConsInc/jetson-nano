@@ -1,0 +1,8 @@
+--- thirdparty/jetson-nano-tools/install-tensorflow.sh	2019-06-25 16:54:10.507469625 +0900
++++ scripts/jetson-nano-tools/install-tensorflow.sh	2019-06-25 16:46:52.407584468 +0900
+@@ -18,4 +18,4 @@
+ sudo pip3 install -U numpy grpcio absl-py py-cpuinfo psutil portpicker grpcio six mock requests gast h5py astor termcolor
+ 
+ # Install TensorFlow
+-pip3 install --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v42 tensorflow-gpu==1.13.1+nv19.4 --user
++pip3 install https://developer.download.nvidia.com/compute/redist/jp/v42/tensorflow-gpu/tensorflow_gpu-1.13.1+nv19.5-cp36-cp36m-linux_aarch64.whl --user
