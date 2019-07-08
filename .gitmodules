@@ -22,6 +22,3 @@
 [submodule "thirdparty/tf-pose-estimation"]
 	path = thirdparty/tf-pose-estimation
 	url = https://github.com/ildoonet/tf-pose-estimation.git
-[submodule "thirdparty/CMake"]
-	path = thirdparty/CMake
-	url = https://github.com/Kitware/CMake.git
