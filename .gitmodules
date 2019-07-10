@@ -10,9 +10,6 @@
 [submodule "thirdparty/installSwapfile"]
 	path = thirdparty/installSwapfile
 	url = https://github.com/JetsonHacksNano/installSwapfile.git
-[submodule "thirdparty/cmake"]
-	path = thirdparty/cmake
-	url = https://github.com/Kitware/CMake.git
 [submodule "thirdparty/openpose"]
 	path = thirdparty/openpose
 	url = https://github.com/CMU-Perceptual-Computing-Lab/openpose.git
@@ -22,3 +19,6 @@
 [submodule "thirdparty/tf-pose-estimation"]
 	path = thirdparty/tf-pose-estimation
 	url = https://github.com/ildoonet/tf-pose-estimation.git
+[submodule "thirdparty/cmake"]
+	path = thirdparty/cmake
+	url = https://github.com/Kitware/cmake.git
